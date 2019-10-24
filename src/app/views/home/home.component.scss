@@ -23,7 +23,7 @@
 }
 
 .more button {
-  background: #fff;
+  background: rgba(255, 255, 255, 0.5);
   padding: 25px 45px;
   margin: 10px;
   border: none;
@@ -31,6 +31,10 @@
   text-transform: uppercase;
   font-weight: bold;
   cursor: pointer;
+}
+
+.more button:hover {
+  background: rgba(255, 255, 255, 1);
 }
 
 @media only screen and (max-width: 427px) {

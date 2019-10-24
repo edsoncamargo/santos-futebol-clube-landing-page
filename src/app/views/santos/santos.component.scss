@@ -1,0 +1,47 @@
+.container {
+    padding: 60px 10px;
+}
+
+.introduction {
+    font-size: 1.5rem;
+    margin-bottom: 30px;
+}
+
+.santos-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.santos-container p {
+    line-height: 1.4em;
+    margin-bottom: 10px;
+    text-align: justify;
+}
+
+.thropys-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    justify-items: center;
+}
+
+.thropy-item {
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    margin: 15px;
+}
+
+.thropys {
+    height: 135px;
+}
+
+@media only screen and (max-width: 443px) {
+    .thropys-container {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+}
