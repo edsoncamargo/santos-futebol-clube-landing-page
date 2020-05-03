@@ -1,47 +1,95 @@
 .container {
     padding: 60px 10px;
-}
 
-.introduction {
-    font-size: 1.5rem;
-    margin-bottom: 30px;
-}
+    .introduction {
+        font-size: 1.5rem;
+        margin-bottom: 30px;
+        display: flex;
+        align-items: center;
+        text-transform: uppercase;
+    }
 
-.santos-container {
-    display: flex;
-    flex-direction: column;
-}
+    .santos-container {
+        display: flex;
+        flex-direction: column;
 
-.santos-container p {
-    line-height: 1.4em;
-    margin-bottom: 10px;
-    text-align: justify;
-}
+        p {
+            line-height: 1.4em;
+            margin-bottom: 10px;
+            text-align: justify;
+        }
 
-.thropys-container {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    justify-items: center;
-}
+        p:last-child {
+            margin-bottom: 0px;
+        }
+    }
 
-.thropy-item {
-    display: flex;
-    flex-direction: column;
-    align-self: center;
-    margin: 15px;
-}
+    .awards {
+        margin-top: 60px;
+    }
 
-.thropys {
-    height: 135px;
-}
-
-@media only screen and (max-width: 443px) {
     .thropys-container {
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
         justify-content: center;
+
+        .thropy-item {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            max-width: 104px;
+            text-align: center;
+
+            padding-left: 10px;
+            padding-right: 10px;
+            border-left: 1px solid rgba($color: #696969, $alpha: .5);
+            border-right: 1px solid rgba($color: #696969, $alpha: .5);
+            margin-top: 10px;
+
+            span {
+                padding-top: 5px;
+                font-size: 0.8em;
+
+                ~span {
+                    font-size: 1.2em;
+                    font-weight: bold;
+                }
+            }
+
+        }
+
+        .thropys {
+            width: 100px;
+            filter: grayscale(100%);
+
+            &:hover {
+                filter: grayscale(0%);
+                transition: .4s ease-in-out;
+            }
+        }
+    }
+
+    .awards-container {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        img {
+            width: 100px;
+            border-radius: 50%;
+        }
+
+        margin-bottom: 35px;
+    }
+
+    @media only screen and (max-width: 443px) {
+        .thropys-container {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
     }
 }

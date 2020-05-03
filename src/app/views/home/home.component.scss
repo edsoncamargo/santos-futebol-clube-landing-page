@@ -3,46 +3,46 @@
   background-size: cover;
   min-height: calc(100vh - 119px);
   color: #fff;
-}
 
-.home-container {
-  min-height: calc(100vh - 119px);
-  display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
-  padding: 10px;
-}
+  .home-container {
+    min-height: calc(100vh - 119px);
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
 
-.home-text {
-  font-size: 2em;
-  text-align: center;
-  padding: 10px;
-  background: rgba(0, 0, 0, 0.5)
-}
+    .home-text {
+      font-size: 2em;
+      text-align: center;
+      padding: 10px;
+      background: rgba(0, 0, 0, 0.5)
+    }
 
-.more button {
-  background: rgba(255, 255, 255, 0.5);
-  padding: 25px 45px;
-  margin: 10px;
-  border: none;
-  font-size: 2em;
-  text-transform: uppercase;
-  font-weight: bold;
-  cursor: pointer;
-}
+    .more button {
+      background: rgba(255, 255, 255, 0.5);
+      padding: 25px 45px;
+      margin: 10px;
+      border: none;
+      font-size: 2em;
+      text-transform: uppercase;
+      font-weight: bold;
+      cursor: pointer;
+    }
 
-.more button:hover {
-  background: rgba(255, 255, 255, 1);
-}
+    .more button:hover {
+      background: rgba(255, 255, 255, 1);
+    }
 
-@media only screen and (max-width: 427px) {
-  .more button {
-    font-size: 1em;
+    @media only screen and (max-width: 427px) {
+      .more button {
+        font-size: 1em;
+      }
+    }
   }
-}
 
-.fa-star {
-  color: #FFD776;
+  .fa-star {
+    color: #FFD776;
+  }
 }
